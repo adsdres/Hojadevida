@@ -26,13 +26,58 @@
             <img src="image\linea.png" alt="" width="100%" height="30">
         </header>
         <h2>Educación</h2>
-            <img src="image\DSC_0306_7.jpg" alt="Andres Del Salto" width="100">
-            <p>Tecnólogo en Análisis de Sistemas con experiencia en <strong><em>administración de proyectos tecnológicos e implementación de sistemas de información</em></strong>. Con trayectoria en áreas gerenciales, administrativas y técnicas, que me ha permitido desempeñarme y aplicar habilidades de liderazgo, capacidad de trabajo en equipo orientado a resultados, <em>lealtad, honestidad, dedicación y ética profesional.</em></p>
-            <p>idiomas</p>
-            <ul>
-                <li>Español - Hablado, Lectura, Escritura</li>
-                <li>Ingles - Lectura, Escritura (bajo)</li>
-            </ul>
+            <table id="tb_Educacion" border="1">
+                <tr>
+                    <th>Año</th>
+                    <th>Institución</th>
+                    <th>Lugar</th>
+                    <th>¿Culmino?</th>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>Instituto Superior Tecnológico Rumiñahui</td>
+                    <td>Quito</td>
+                    <td>Técnico Superior en Análisis de Sistemas</td>
+                </tr>
+                <tr>
+                    <td>2009</td>
+                    <td>Instituto Superior Tecnológico Rumiñahui</td>
+                    <td>Quito</td>
+                    <td>Tecnólogo en Análisis de Sistemas</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Corporación Universitaria de Asturias</td>
+                    <td>Quito</td>
+                    <td>Gerencia de Proyectos Basado en la Metodología PMI</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>CEC-IAEN</td>
+                    <td>Quito</td>
+                    <td>Gestión de Servicios TI</td>
+                </tr>
+            </table>
+            <h3>Agregar Estudios</h3>
+            <form name="Agregar Estudios" id="fr_Estudios"  class="estudios" action="index.html" method="post">
+                <fieldset>
+                    <label for="frs_año">Año</label>
+                    <select id="frs_año" class="" name="Año">
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                    </select>
+                    <br>
+                    <label for="fri_institucion">Institución</label>
+                    <input id="fri_institucion" type="text" name="institucion" value="" required>
+                    <br>
+                    <label for="frta_lugar">Lugar</label>
+                    <textarea id="frta_lugar" name="lugar" rows="8" cols="80" required></textarea>
+                    <br>
+                    <input type="button" name="enviar" value="Enviar">
+                </fieldset>
+            </form>
     </body>
     <footer>
         <img src="image\linea.png" alt="" width="100%" height="30">
